@@ -154,7 +154,8 @@ namespace MyStoreWinApp
             {
                 memberRepository = this.memberRepository,
                 InsertOrUpdate = true,
-                Text = "Add new member"
+                Text = "Add new member",
+                isAdmin = true,
             };
 
             if (frmMemberDetails.ShowDialog() == DialogResult.OK)
@@ -375,6 +376,16 @@ namespace MyStoreWinApp
             frmLogin.Closed += (s, args) => this.Close();
             this.Hide();
             frmLogin.Show();
+        }
+
+        private void txtMemberID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvMemberList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

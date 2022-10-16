@@ -77,11 +77,12 @@ namespace MyStoreWinApp
             this.txtMemberID.Name = "txtMemberID";
             this.txtMemberID.Size = new System.Drawing.Size(210, 27);
             this.txtMemberID.TabIndex = 1;
+            this.txtMemberID.TextChanged += new System.EventHandler(this.txtMemberID_TextChanged);
             // 
             // lbMemberName
             // 
             this.lbMemberName.AutoSize = true;
-            this.lbMemberName.Location = new System.Drawing.Point(30, 95);
+            this.lbMemberName.Location = new System.Drawing.Point(30, 72);
             this.lbMemberName.Name = "lbMemberName";
             this.lbMemberName.Size = new System.Drawing.Size(109, 20);
             this.lbMemberName.TabIndex = 2;
@@ -89,7 +90,7 @@ namespace MyStoreWinApp
             // 
             // txtMemberName
             // 
-            this.txtMemberName.Location = new System.Drawing.Point(149, 91);
+            this.txtMemberName.Location = new System.Drawing.Point(149, 68);
             this.txtMemberName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMemberName.Name = "txtMemberName";
             this.txtMemberName.Size = new System.Drawing.Size(210, 27);
@@ -98,7 +99,7 @@ namespace MyStoreWinApp
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(30, 149);
+            this.lbEmail.Location = new System.Drawing.Point(30, 104);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(46, 20);
             this.lbEmail.TabIndex = 4;
@@ -106,7 +107,7 @@ namespace MyStoreWinApp
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(149, 145);
+            this.txtEmail.Location = new System.Drawing.Point(149, 100);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(210, 27);
@@ -115,7 +116,7 @@ namespace MyStoreWinApp
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(30, 209);
+            this.lbPassword.Location = new System.Drawing.Point(30, 137);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(70, 20);
             this.lbPassword.TabIndex = 6;
@@ -123,7 +124,7 @@ namespace MyStoreWinApp
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(149, 204);
+            this.txtPassword.Location = new System.Drawing.Point(149, 132);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -133,7 +134,7 @@ namespace MyStoreWinApp
             // lbCity
             // 
             this.lbCity.AutoSize = true;
-            this.lbCity.Location = new System.Drawing.Point(30, 267);
+            this.lbCity.Location = new System.Drawing.Point(30, 173);
             this.lbCity.Name = "lbCity";
             this.lbCity.Size = new System.Drawing.Size(34, 20);
             this.lbCity.TabIndex = 8;
@@ -141,7 +142,7 @@ namespace MyStoreWinApp
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(149, 260);
+            this.txtCity.Location = new System.Drawing.Point(149, 166);
             this.txtCity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(210, 27);
@@ -150,7 +151,7 @@ namespace MyStoreWinApp
             // lbCountry
             // 
             this.lbCountry.AutoSize = true;
-            this.lbCountry.Location = new System.Drawing.Point(30, 315);
+            this.lbCountry.Location = new System.Drawing.Point(30, 201);
             this.lbCountry.Name = "lbCountry";
             this.lbCountry.Size = new System.Drawing.Size(60, 20);
             this.lbCountry.TabIndex = 10;
@@ -158,7 +159,7 @@ namespace MyStoreWinApp
             // 
             // txtCountry
             // 
-            this.txtCountry.Location = new System.Drawing.Point(149, 315);
+            this.txtCountry.Location = new System.Drawing.Point(149, 201);
             this.txtCountry.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(210, 27);
@@ -166,10 +167,10 @@ namespace MyStoreWinApp
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(90, 357);
+            this.btnNew.Location = new System.Drawing.Point(31, 239);
             this.btnNew.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(125, 31);
+            this.btnNew.Size = new System.Drawing.Size(83, 74);
             this.btnNew.TabIndex = 13;
             this.btnNew.Text = "&New";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -177,10 +178,10 @@ namespace MyStoreWinApp
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(252, 357);
+            this.btnDelete.Location = new System.Drawing.Point(149, 239);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(125, 31);
+            this.btnDelete.Size = new System.Drawing.Size(89, 74);
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -189,15 +190,16 @@ namespace MyStoreWinApp
             // dgvMemberList
             // 
             this.dgvMemberList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMemberList.Location = new System.Drawing.Point(30, 396);
+            this.dgvMemberList.Location = new System.Drawing.Point(31, 333);
             this.dgvMemberList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvMemberList.Name = "dgvMemberList";
             this.dgvMemberList.ReadOnly = true;
             this.dgvMemberList.RowHeadersWidth = 51;
             this.dgvMemberList.RowTemplate.Height = 25;
             this.dgvMemberList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMemberList.Size = new System.Drawing.Size(690, 288);
+            this.dgvMemberList.Size = new System.Drawing.Size(700, 288);
             this.dgvMemberList.TabIndex = 15;
+            this.dgvMemberList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMemberList_CellContentClick);
             this.dgvMemberList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMemberList_CellDoubleClick);
             // 
             // lbSearch
@@ -271,7 +273,7 @@ namespace MyStoreWinApp
             this.grSearch.Controls.Add(this.txtSearchValue);
             this.grSearch.Controls.Add(this.btnSearch);
             this.grSearch.Controls.Add(this.lbSearch);
-            this.grSearch.Location = new System.Drawing.Point(412, 233);
+            this.grSearch.Location = new System.Drawing.Point(412, 40);
             this.grSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grSearch.Name = "grSearch";
             this.grSearch.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -311,7 +313,7 @@ namespace MyStoreWinApp
             this.grFilter.Controls.Add(this.lbSearchCity);
             this.grFilter.Controls.Add(this.cboCountry);
             this.grFilter.Controls.Add(this.lbSearchCountry);
-            this.grFilter.Location = new System.Drawing.Point(412, 60);
+            this.grFilter.Location = new System.Drawing.Point(412, 184);
             this.grFilter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grFilter.Name = "grFilter";
             this.grFilter.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -322,9 +324,9 @@ namespace MyStoreWinApp
             // 
             // Logout
             // 
-            this.Logout.Location = new System.Drawing.Point(611, 21);
+            this.Logout.Location = new System.Drawing.Point(273, 239);
             this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(109, 32);
+            this.Logout.Size = new System.Drawing.Size(86, 74);
             this.Logout.TabIndex = 24;
             this.Logout.Text = "Log out";
             this.Logout.UseVisualStyleBackColor = true;
@@ -334,7 +336,7 @@ namespace MyStoreWinApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 700);
+            this.ClientSize = new System.Drawing.Size(754, 659);
             this.Controls.Add(this.Logout);
             this.Controls.Add(this.grFilter);
             this.Controls.Add(this.grSearch);

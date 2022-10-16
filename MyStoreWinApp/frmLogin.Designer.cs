@@ -75,7 +75,7 @@ namespace MyStoreWinApp
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(123, 157);
+            this.btnLogin.Location = new System.Drawing.Point(90, 143);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(93, 39);
@@ -86,7 +86,7 @@ namespace MyStoreWinApp
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(262, 157);
+            this.btnCancel.Location = new System.Drawing.Point(229, 143);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(93, 39);
@@ -99,7 +99,7 @@ namespace MyStoreWinApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 245);
+            this.ClientSize = new System.Drawing.Size(390, 211);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);

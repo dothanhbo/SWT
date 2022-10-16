@@ -9,7 +9,7 @@ namespace DataAccess
 {
     public class MemberDAO
     {
-        // Get default user from appsettings
+        // Get Admin user 
         private MemberObject GetDefaultMember()
         {
             MemberObject Default = null;
@@ -36,53 +36,54 @@ namespace DataAccess
             return Default;
         }
 
-        // Initialize MemberList
+        // Tạo list member mẫu
+
         private static List<MemberObject> members = new List<MemberObject>
         {
             new MemberObject
             {
                 MemberID = 2,
-                MemberName = "Thomas Muller",
-                Email = "muller@gmail.com",
+                MemberName = "TranThien",
+                Email = "denk@gmail.com",
                 Password = "123456",
-                City = "Munich",
-                Country = "Germany"
+                City = "RahGia",
+                Country = "KienGiang"
             },
             new MemberObject
             {
                 MemberID = 3,
-                MemberName = "Michael Ballack",
-                Email = "M13@gmail.com",
+                MemberName = "Minh Dang",
+                Email = "DangDang@gmail.com",
                 Password = "123456",
-                City = "Munich",
-                Country = "Germany"
+                City = "Dak lak",
+                Country = "Dak lak"
             },
             new MemberObject
             {
                 MemberID = 4,
-                MemberName = "Lionel Messi",
-                Email = "messi@psg.vn",
+                MemberName = "Thanh BB",
+                Email = "Bobobo@psg.vn",
                 Password = "123456",
-                City = "Pari",
-                Country = "France"
+                City = "Nauy",
+                Country = "AmericanThor"
             },
             new MemberObject
             {
                 MemberID = 5,
-                MemberName = "Cristinano Ronaldo",
+                MemberName = "Lam Dang",
                 Email = "CR7@gmail.com",
                 Password = "123456",
-                City = "Manchester",
-                Country = "England"
+                City = "Wifub",
+                Country = "Tokyo"
             },
             new MemberObject
             {
                 MemberID = 6,
-                MemberName = "Neymar",
-                Email = "neymar10@gmail.com",
+                MemberName = "xnxxxRapid Dogge",
+                Email = "Hacker@gmail.com",
                 Password = "123456",
-                City = "Paris",
-                Country = "France"
+                City = "Quan 9",
+                Country = "Ho Chi Minh"
             }
         };
         private MemberDAO()
@@ -117,8 +118,8 @@ namespace DataAccess
 
         public MemberObject Login(string Email, string Password)
         {
-            MemberObject member = members.SingleOrDefault(mb => mb.Email.Equals(Email) && mb.Password.Equals(Password));
-            return member;
+            return members.SingleOrDefault(mb => mb.Email.Equals(Email) && mb.Password.Equals(Password));
+            
         }
         
         public MemberObject GetMember(int MemberId)
@@ -176,7 +177,7 @@ namespace DataAccess
         {
             IEnumerable<MemberObject> searchResult = null;
 
-            var memberSearch = from member in members
+            IEnumerable<MemberObject> memberSearch = from member in members
                                where member.MemberID == id
                                select member;
             searchResult = memberSearch;

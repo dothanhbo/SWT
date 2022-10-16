@@ -45,7 +45,8 @@ namespace MyStoreWinApp
                         Text = "Member Details",
                         memberInfo = loginMember,
                         InsertOrUpdate = false,
-                        memberRepository = memberRepository
+                        memberRepository = memberRepository,
+                        isAdmin = false,
                     };
                     frmMemberDetails.Closed += (s, args) => this.Close();
                     this.Hide();

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SE160385\\MyStoreWinApp\\MyStoreWinApp.csproj": {}
+    "E:\\Study\\2022_CN5\\SWT301\\SWT\\MyStoreWinApp\\MyStoreWinApp.csproj": {}
   },
   "projects": {
-    "D:\\SE160385\\BusinessObject\\BusinessObject.csproj": {
+    "E:\\Study\\2022_CN5\\SWT301\\SWT\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SE160385\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "E:\\Study\\2022_CN5\\SWT301\\SWT\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\SE160385\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\SE160385\\BusinessObject\\obj\\",
+        "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\denk\\.nuget\\packages\\",
+        "outputPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\denk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\SE160385\\DataValidation\\DataValidation.csproj": {
-                "projectPath": "D:\\SE160385\\DataValidation\\DataValidation.csproj"
+              "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataValidation\\DataValidation.csproj": {
+                "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataValidation\\DataValidation.csproj"
               }
             }
           }
@@ -54,8 +49,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,25 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SE160385\\DataAccess\\DataAccess.csproj": {
+    "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SE160385\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\SE160385\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\SE160385\\DataAccess\\obj\\",
+        "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\denk\\.nuget\\packages\\",
+        "outputPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\denk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,15 +80,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\SE160385\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "D:\\SE160385\\BusinessObject\\BusinessObject.csproj"
+              "E:\\Study\\2022_CN5\\SWT301\\SWT\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
@@ -124,8 +113,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -134,25 +122,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SE160385\\DataValidation\\DataValidation.csproj": {
+    "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataValidation\\DataValidation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SE160385\\DataValidation\\DataValidation.csproj",
+        "projectUniqueName": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataValidation\\DataValidation.csproj",
         "projectName": "DataValidation",
-        "projectPath": "D:\\SE160385\\DataValidation\\DataValidation.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\SE160385\\DataValidation\\obj\\",
+        "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataValidation\\DataValidation.csproj",
+        "packagesPath": "C:\\Users\\denk\\.nuget\\packages\\",
+        "outputPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataValidation\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\denk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -160,7 +144,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -184,8 +167,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -194,47 +176,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\SE160385\\MyStoreWinApp\\MyStoreWinApp.csproj": {
+    "E:\\Study\\2022_CN5\\SWT301\\SWT\\MyStoreWinApp\\MyStoreWinApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SE160385\\MyStoreWinApp\\MyStoreWinApp.csproj",
+        "projectUniqueName": "E:\\Study\\2022_CN5\\SWT301\\SWT\\MyStoreWinApp\\MyStoreWinApp.csproj",
         "projectName": "MyStoreWinApp",
-        "projectPath": "D:\\SE160385\\MyStoreWinApp\\MyStoreWinApp.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\SE160385\\MyStoreWinApp\\obj\\",
+        "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\MyStoreWinApp\\MyStoreWinApp.csproj",
+        "packagesPath": "C:\\Users\\denk\\.nuget\\packages\\",
+        "outputPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\MyStoreWinApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\denk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\SE160385\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "D:\\SE160385\\BusinessObject\\BusinessObject.csproj"
+              "E:\\Study\\2022_CN5\\SWT301\\SWT\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\BusinessObject\\BusinessObject.csproj"
               },
-              "D:\\SE160385\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\SE160385\\DataAccess\\DataAccess.csproj"
+              "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataAccess\\DataAccess.csproj"
               },
-              "D:\\SE160385\\DataValidation\\DataValidation.csproj": {
-                "projectPath": "D:\\SE160385\\DataValidation\\DataValidation.csproj"
+              "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataValidation\\DataValidation.csproj": {
+                "projectPath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\DataValidation\\DataValidation.csproj"
               }
             }
           }
@@ -254,8 +231,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -267,7 +243,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
