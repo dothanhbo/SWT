@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{969446F7-0C11-4091-BB76-27C5B6F6E59E}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Data Layer", "3. Data Layer", "{F8154C97-FBEB-4A99-B871-114813A37AAA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataValidation", "DataValidation\DataValidation.csproj", "{7F50D2B4-56C5-4368-910F-8681F15FA9FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest", "NUnitTest\NUnitTest.csproj", "{8A992FB7-0735-4D2F-B446-AB0CE03372F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7F50D2B4-56C5-4368-910F-8681F15FA9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F50D2B4-56C5-4368-910F-8681F15FA9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F50D2B4-56C5-4368-910F-8681F15FA9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A992FB7-0735-4D2F-B446-AB0CE03372F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A992FB7-0735-4D2F-B446-AB0CE03372F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A992FB7-0735-4D2F-B446-AB0CE03372F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A992FB7-0735-4D2F-B446-AB0CE03372F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
