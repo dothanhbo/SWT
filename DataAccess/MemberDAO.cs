@@ -10,7 +10,7 @@ namespace DataAccess
     public class MemberDAO
     {
         // Get Admin user 
-        private MemberObject GetDefaultMember()
+        MemberObject GetDefaultMember()
         {
             MemberObject Default = null;
             using (StreamReader r = new StreamReader("appsettings.json"))

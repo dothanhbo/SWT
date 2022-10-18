@@ -1,4 +1,8 @@
-﻿using NUnit.Framework;
+﻿using BusinessObject;
+using DataAccess;
+using DataAccess.Repository;
+using NUnit.Framework;
+
 
 namespace NUnitTest
 {
@@ -6,16 +10,17 @@ namespace NUnitTest
     {
         //Để chạy test: chọn Test trên thanh taskbar, chọn run test
         // phím tắt chạy test: Ctrl R A
-
+        MemberRepository memberRepository;
 
 
         // hàm nạy chạy đầu tiên khi vào test
         [SetUp]
         public void Setup()
         {
+            memberRepository = new MemberRepository();
         }
 
-
+        /*
         // một Test case cơ bản
         [Test]
         public void TestDemo()
@@ -38,8 +43,8 @@ namespace NUnitTest
         // TestCase với parameter truyền vào đi kèm Expected luôn -> thử được nhiều data cùng lúc | Method cũng phải return giá trị
         // không cần Assert
         [TestCase(0, ExpectedResult = 0)]
-        [TestCase(1, ExpectedResult = 0)]
-        [TestCase(2, ExpectedResult = 0)]
+        [TestCase(1, ExpectedResult = 1)]
+        [TestCase(2, ExpectedResult = 2)]
 
         public int TestCaseWithExeptedDemo(int a)
         {
@@ -57,7 +62,47 @@ namespace NUnitTest
 
         // Cơ bản nhiêu đó thôi. Viết code test từng method trong MemberDAO đi anh em =))
         // Tham khảo thêm tại https://docs.nunit.org/articles/nunit/writing-tests/attributes.html
+        */
+        // Vô code:
+        // TEST METHOD GetDefaultMember()
+        [Test]
+        public void LoginUnitTest()
+        {
+            // Trả về Tài khoảng trong file // appsettings
+            // user "email": "admin@fstore.com",
+            // "password": "admin@@"
+            // Tra ve tai khoan admin nay neu dung
+            var actual = memberRepository.Login("admin@fstore.com", "admin@@");
+            var expected = new MemberObject{
+                MemberID = 1,
+                Email = "admin@fstore.com",
+                Password = "admin@@",
+                City = "",
+                Country = "",
+                MemberName = "Admin"
+            };
+            Assert.IsTrue(CompareTwoMemberObject(expected,actual));
+            
+            // sai tra ve null
+            actual = memberRepository.Login("admin@fstore.com", "Ahihi");
+            Assert.IsTrue(actual == null);
+            
+
+        }
 
 
+        public bool CompareTwoMemberObject(MemberObject A, MemberObject B)
+        {
+            
+            if (A.MemberID != B.MemberID) return false;
+            if (A.Email != B.Email) return false;
+            if (A.Password != B.Password) return false;
+            if (A.Country != B.Country) return false;
+            if (A.City != B.City) return false;
+            if (A.MemberName != B.MemberName) return false;
+            return true;
+            
+
+        }
     }
 }
