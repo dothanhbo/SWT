@@ -58,3 +58,15 @@ E:\Study\2022_CN5\SWT301\SWT\DataValidation\obj\Debug\net5.0\DataValidation.dll
 E:\Study\2022_CN5\SWT301\SWT\DataValidation\obj\Debug\net5.0\refint\DataValidation.dll
 E:\Study\2022_CN5\SWT301\SWT\DataValidation\obj\Debug\net5.0\DataValidation.pdb
 E:\Study\2022_CN5\SWT301\SWT\DataValidation\obj\Debug\net5.0\ref\DataValidation.dll
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\bin\Debug\net5.0\DataValidation.deps.json
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\bin\Debug\net5.0\DataValidation.dll
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\bin\Debug\net5.0\DataValidation.pdb
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\DataValidation.csproj.AssemblyReference.cache
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\DataValidation.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\DataValidation.AssemblyInfoInputs.cache
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\DataValidation.AssemblyInfo.cs
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\DataValidation.csproj.CoreCompileInputs.cache
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\DataValidation.dll
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\refint\DataValidation.dll
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\DataValidation.pdb
+D:\VSCode2022\project\Software-testing-with-nunit\DataValidation\obj\Debug\net5.0\ref\DataValidation.dll

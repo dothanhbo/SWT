@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "HEeKIWbFnPr/IC0t0B+Afj+OP87oYFDqWt72PRy4lBt/83vXMKz/8zqTHl1UShLTvCDxzAnyJeLWA0n8zRHVsg==",
+  "dgSpecHash": "3mcFxnCf0e7lMDlZ+Or7N2BPw8HnfgASr1sx0TupsjA7CCOL+boM0bzt+giQn5NXtJEBjKB/1jeE4Q8CN1Gnpg==",
   "success": true,
-  "projectFilePath": "E:\\Study\\2022_CN5\\SWT301\\SWT\\MyStoreWinApp\\MyStoreWinApp.csproj",
+  "projectFilePath": "D:\\VSCode2022\\project\\Software-testing-with-nunit\\MyStoreWinApp\\MyStoreWinApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\denk\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
-    "C:\\Users\\denk\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\denk\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\5.0.0\\microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
-    "C:\\Users\\denk\\.nuget\\packages\\microsoft.extensions.configuration.json\\5.0.0\\microsoft.extensions.configuration.json.5.0.0.nupkg.sha512",
-    "C:\\Users\\denk\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\denk\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
-    "C:\\Users\\denk\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
-    "C:\\Users\\denk\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\5.0.0\\microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration.json\\5.0.0\\microsoft.extensions.configuration.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

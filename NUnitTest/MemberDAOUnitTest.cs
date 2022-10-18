@@ -1,8 +1,9 @@
 ﻿using BusinessObject;
-using DataAccess;
 using DataAccess.Repository;
 using NUnit.Framework;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace NUnitTest
 {
@@ -11,7 +12,62 @@ namespace NUnitTest
         //Để chạy test: chọn Test trên thanh taskbar, chọn run test
         // phím tắt chạy test: Ctrl R A
         MemberRepository memberRepository;
-
+        List<MemberObject> members = new List<MemberObject>
+            {
+                new MemberObject{
+                    MemberID = 2,
+                    MemberName = "TranThien",
+                    Email = "denk@gmail.com",
+                    Password = "123456",
+                    City = "RahGia",
+                    Country = "KienGiang"
+                },
+                new MemberObject
+                {
+                    MemberID = 3,
+                    MemberName = "Minh Dang",
+                    Email = "DangDang@gmail.com",
+                    Password = "123456",
+                    City = "Dak lak",
+                    Country = "Dak lak"
+                },
+                new MemberObject
+                {
+                    MemberID = 4,
+                    MemberName = "Thanh BB",
+                    Email = "Bobobo@psg.vn",
+                    Password = "123456",
+                    City = "Nauy",
+                    Country = "AmericanThor"
+                },
+                new MemberObject
+                {
+                    MemberID = 5,
+                    MemberName = "Lam Dang",
+                    Email = "CR7@gmail.com",
+                    Password = "123456",
+                    City = "Wifub",
+                    Country = "Tokyo"
+                },
+                new MemberObject
+                {
+                    MemberID = 6,
+                    MemberName = "xnxxxRapid Dogge",
+                    Email = "Hacker@gmail.com",
+                    Password = "123456",
+                    City = "Quan 9",
+                    Country = "Ho Chi Minh"
+                },
+                new MemberObject
+                {
+                    MemberID = 1,
+                    Email = "admin@fstore.com",
+                    Password = "admin@@",
+                    City = "",
+                    Country = "",
+                    MemberName = "Admin"
+                }
+            };
 
         // hàm nạy chạy đầu tiên khi vào test
         [SetUp]
@@ -73,7 +129,8 @@ namespace NUnitTest
             // "password": "admin@@"
             // Tra ve tai khoan admin nay neu dung
             var actual = memberRepository.Login("admin@fstore.com", "admin@@");
-            var expected = new MemberObject{
+            var expected = new MemberObject
+            {
                 MemberID = 1,
                 Email = "admin@fstore.com",
                 Password = "admin@@",
@@ -81,19 +138,43 @@ namespace NUnitTest
                 Country = "",
                 MemberName = "Admin"
             };
-            Assert.IsTrue(CompareTwoMemberObject(expected,actual));
-            
+            Assert.IsTrue(CompareTwoMemberObject(expected, actual));
+
             // sai tra ve null
             actual = memberRepository.Login("admin@fstore.com", "Ahihi");
             Assert.IsTrue(actual == null);
-            
 
+
+        }
+
+        [Test]
+        public void ShowMemberListUnitTest()
+        {
+            //exception: show all members
+            var actual = memberRepository.GetMembersList();
+            var expected = members;            
+            Assert.IsTrue(expected.SequenceEqual(actual, new MemberComparer()));
+        }
+
+        [Test]
+        public void SearchMemberByIdUnitTest()
+        {
+            //exception: show all members
+            int memberId = -1; ;
+            foreach( MemberObject member in members){
+                memberId = member.MemberID;
+                var actual = memberRepository.SearchMember(memberId);
+                var expected = from member1 in members
+                               where member1.MemberID == memberId
+                               select member1;
+                Assert.IsTrue(expected.SequenceEqual(actual,new MemberComparer()));
+            }
         }
 
 
         public bool CompareTwoMemberObject(MemberObject A, MemberObject B)
         {
-            
+
             if (A.MemberID != B.MemberID) return false;
             if (A.Email != B.Email) return false;
             if (A.Password != B.Password) return false;
@@ -101,8 +182,14 @@ namespace NUnitTest
             if (A.City != B.City) return false;
             if (A.MemberName != B.MemberName) return false;
             return true;
-            
 
+
+        }
+
+        public bool CompareTwoIEnumerableMemberObject(IEnumerable<MemberObject> A, IEnumerable<MemberObject> B)
+        {
+            bool equal = A.SequenceEqual(B);
+            return equal;
         }
     }
 }
