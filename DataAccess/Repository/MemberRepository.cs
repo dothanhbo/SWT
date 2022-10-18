@@ -26,6 +26,7 @@ namespace DataAccess.Repository
         {
             return MemberDAO.Instance.SearchMember(name);
         }
+
         public MemberObject Login(string Email, string Password)
         {
             return MemberDAO.Instance.Login(Email, Password);
