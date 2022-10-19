@@ -46,7 +46,7 @@ namespace BusinessObject
             if (Object.ReferenceEquals(x, null) || Object.ReferenceEquals(y, null))
                 return false;
 
-            //Check whether the products' properties are equal.
+            //Check whether the member' properties are equal.
             return x.MemberID == y.MemberID && x.MemberName == y.MemberName 
                 && x.Email==y.Email && x.Password == y.Password && x.City == y.City && x.Country == y.Country;
         }
@@ -59,14 +59,12 @@ namespace BusinessObject
             //Check whether the object is null
             if (Object.ReferenceEquals(member, null)) return 0;
 
-            //Get hash code for the Name field if it is not null.
             int hashMemberName = member.MemberName == null ? 0 : member.MemberName.GetHashCode();
             int hashMemberEmail = member.Email == null ? 0 : member.Email.GetHashCode();
             int hashMemberPassword = member.Password == null ? 0 : member.Password.GetHashCode();
             int hashMemberCity = member.City == null ? 0 : member.City.GetHashCode();
             int hashMemberCountry = member.Country == null ? 0 : member.Country.GetHashCode();
 
-            //Get hash code for the Code field.
             int hashMemberID = member.MemberID.GetHashCode();
 
             //Calculate the hash code for the product.

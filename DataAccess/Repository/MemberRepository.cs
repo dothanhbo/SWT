@@ -19,7 +19,14 @@ namespace DataAccess.Repository
         }
         public IEnumerable<MemberObject> SearchMember(int id)
         {
-            return MemberDAO.Instance.SearchMember(id);
+            if(id > 0)
+            {
+                return MemberDAO.Instance.SearchMember(id);
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException();
+            }
         }
 
         public IEnumerable<MemberObject> SearchMember(string name)

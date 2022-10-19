@@ -1,6 +1,7 @@
 ﻿using BusinessObject;
 using DataAccess.Repository;
 using NUnit.Framework;
+using NUnit.Framework.Constraints;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -97,7 +98,7 @@ namespace NUnitTest
         }
 
         // TestCase với parameter truyền vào đi kèm Expected luôn -> thử được nhiều data cùng lúc | Method cũng phải return giá trị
-        // không cần Assert
+        //không cần Assert
         [TestCase(0, ExpectedResult = 0)]
         [TestCase(1, ExpectedResult = 1)]
         [TestCase(2, ExpectedResult = 2)]
@@ -122,6 +123,7 @@ namespace NUnitTest
         // Vô code:
         // TEST METHOD GetDefaultMember()
         [Test]
+        [Order(0)]
         public void LoginUnitTest()
         {
             // Trả về Tài khoảng trong file // appsettings
@@ -148,6 +150,7 @@ namespace NUnitTest
         }
 
         [Test]
+        [Order(1)]
         public void ShowMemberListUnitTest()
         {
             //exception: show all members
@@ -157,20 +160,26 @@ namespace NUnitTest
         }
 
         [Test]
-        public void SearchMemberByIdUnitTest()
+        [Order(2)]
+        [TestCase(1)]
+        [TestCase(2)]
+        public void SearchMemberByIdUnitTest(int id)
         {
-            //exception: show all members
-            int memberId = -1; ;
-            foreach( MemberObject member in members){
-                memberId = member.MemberID;
-                var actual = memberRepository.SearchMember(memberId);
-                var expected = from member1 in members
-                               where member1.MemberID == memberId
-                               select member1;
-                Assert.IsTrue(expected.SequenceEqual(actual,new MemberComparer()));
-            }
+            //exception: show all member by MemberID
+            var actual = memberRepository.SearchMember(id);
+            var expected = from member1 in members
+                           where member1.MemberID == id
+                           select member1;
+            Assert.IsTrue(expected.SequenceEqual(actual,new MemberComparer()));
         }
 
+        [Test]
+        [Order(3)]
+        [TestCase(-1)]
+        public void SearchMemberByIdGivenWrongArgumentThrowsException(int id)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => memberRepository.SearchMember(id));
+        }
 
         public bool CompareTwoMemberObject(MemberObject A, MemberObject B)
         {
@@ -184,12 +193,6 @@ namespace NUnitTest
             return true;
 
 
-        }
-
-        public bool CompareTwoIEnumerableMemberObject(IEnumerable<MemberObject> A, IEnumerable<MemberObject> B)
-        {
-            bool equal = A.SequenceEqual(B);
-            return equal;
         }
     }
 }
